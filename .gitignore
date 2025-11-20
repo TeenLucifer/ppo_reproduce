@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+Qwen2.5-0.5B/
+Qwen2.5-0.5B-Instruct/
+helpsteer3_preference/
+.cache/
+COIG-P/
+ref_ppo_train.py
