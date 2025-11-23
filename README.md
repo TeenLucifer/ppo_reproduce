@@ -11,9 +11,9 @@
 模型结构复用qwen2.5-0.5B，在输出层拼一个线性映射层，让模型输出一个关于人类偏好标量值。
 
 损失函数用成对偏好函数，通过[Bradley-Terry](https://blog.csdn.net/shizheng_Li/article/details/144629002)模型建模人类偏好，如果**chosen**比**rejected**得分高则损失变小，让模型给人类偏好的回答数据打高分。
-$$
-L = -\log\left(\sigma\left(r_{chosen} - r_{rejected}\right)\right)
-$$
+<p align="center">
+    <img src="./docs/pairwise-preference_form.png" width="40%">
+</p>
 -log为-ln函数，σ表示sigmoid函数，r表示模型对数据的打分。
 
 对着图像来解释，r(chosen) - r(rejected)越大，sigmoid函数越接近于1，-ln函数越接近于0，即loss函数越小
