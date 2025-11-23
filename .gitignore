@@ -10,8 +10,10 @@ wheels/
 .venv
 
 Qwen2.5-0.5B/
+Qwen2.5-0.5B-Reward/
 Qwen2.5-0.5B-Instruct/
 helpsteer3_preference/
 .cache/
 COIG-P/
+reward_logs/
 ref_ppo_train.py
